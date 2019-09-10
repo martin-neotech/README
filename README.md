@@ -51,6 +51,7 @@ Python 1.6 - Can now work with Bolt protocol 2.0 (Introduced in Server 3.4)
 
 
 | Server | Bolt Protocol | Java Driver | JavaScript Driver | Python Driver | .Net Driver | Go Driver |
+|---|---|---|---|---|---|---|
 | 4.0 | | | | | | |
 | 3.4 | 2.0 | | | 1.6 | | |
 | 3.3.7 | | | | | | |
