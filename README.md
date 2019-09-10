@@ -50,7 +50,7 @@ https://neo4j.com/developer/docker/
 
 https://github.com/neo4j/neo4j-python-driver/wiki/1.6-changelog - Can now work with Bolt protocol v2, as introduced in server 3.4
 
-https://github.com/neo4j/neo4j-java-driver/wiki/1.0-changelog - A client implementation of the Bolt V1 protocol.
+https://github.com/neo4j/neo4j-java-driver/wiki/1.0-changelog - A fully new API for Neo4j, and a client implementation of the Bolt V1 protocol.
 
 https://github.com/neo4j/neo4j-dotnet-driver/wiki/1.0-changelog - It provides all the basic features to connect to a 3.0+ Neo4j database and run Cypher statements over the BOLT protocol.
 
