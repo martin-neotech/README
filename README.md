@@ -42,7 +42,9 @@ Python 1.7.0b1 - Broke out connector code into separate package: neobolt
 
 https://github.com/neo4j-drivers/neobolt
 
+https://github.com/neo4j-drivers/seabolt
 
+https://github.com/neo4j-drivers/gobolt
 
 # Neo4j Server
 
