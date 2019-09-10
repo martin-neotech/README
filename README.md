@@ -36,11 +36,27 @@ https://neo4j.com/docs/driver-manual/current/
 | .Net        | https://github.com/neo4j/neo4j-dotnet-driver  | https://neo4j.com/docs/api/dotnet-driver/current |   |
 | Go          |  https://github.com/neo4j/neo4j-go-driver | https://godoc.org/github.com/neo4j/neo4j-go-driver/neo4j |   |
 
+# Bolt Connectors
+
+Python 1.7.0b1 - Broke out connector code into separate package: neobolt
+
 
 # Neo4j Server
 
 
 https://neo4j.com/developer/docker/
+
+
+Python 1.6 - Can now work with Bolt protocol 2.0 (Introduced in Server 3.4)
+
+
+| Server | Bolt Protocol | Java Driver | JavaScript Driver | Python Driver | .Net Driver | Go Driver |
+| 4.0 | | | | | | |
+| 3.4 | 2.0 | | | 1.6 | | |
+| 3.3.7 | | | | | | |
+| 3.2.10 | | | | | | |
+| 3.1.8 | | | | | | |
+| 2.3.12 | | | | | | |
 
 
 # Neo4j Ecosystem
