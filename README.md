@@ -32,6 +32,6 @@ https://neo4j.com/docs/driver-manual/current/
 |-------------|---|---|---|---|
 | Java        | https://github.com/neo4j/neo4j-java-driver | | https://neo4j.com/docs/api/java-driver/current/ |   |
 | JavaScript  | https://github.com/neo4j/neo4j-javascript-driver |   | https://neo4j.com/docs/api/javascript-driver/current/ |   |
-| Python |    | https://github.com/neo4j/neo4j-python-driver | | https://neo4j.com/docs/api/python-driver/current/ |   |
+| Python      | https://github.com/neo4j/neo4j-python-driver | | https://neo4j.com/docs/api/python-driver/current/ |   |
 | .Net        | https://github.com/neo4j/neo4j-dotnet-driver  |   | https://neo4j.com/docs/api/dotnet-driver/current |   |
 | Go          |  https://github.com/neo4j/neo4j-go-driver |   | https://godoc.org/github.com/neo4j/neo4j-go-driver/neo4j |   |
