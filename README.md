@@ -122,3 +122,6 @@ Based on vis
 
 https://github.com/neo4j-contrib/neovis.js
 
+## Neo4j Bloom
+
+https://neo4j.com/bloom/
