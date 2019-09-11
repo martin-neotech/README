@@ -125,3 +125,5 @@ https://github.com/neo4j-contrib/neovis.js
 ## Neo4j Bloom
 
 https://neo4j.com/bloom/
+
+<img src="./Neo4j.Graph.Platform.Bloom.svg">
