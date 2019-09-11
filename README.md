@@ -92,3 +92,33 @@ https://neo4j.com/docs/cypher-refcard/current/
 
 https://neo4j.com/docs/cypher-manual/current/
 
+
+
+# Graph Visualization
+
+
+## Java
+
+### JUNG
+
+https://en.wikipedia.org/wiki/JUNG
+
+https://github.com/aamanlamba/jung-neo4j
+
+
+## JavaScript
+
+### Vis.js
+
+https://visjs.org/
+
+Example with neo4j database: https://github.com/aamanlamba/graphvisjs
+
+http://ciminf.github.io/Hacking-Health-Camp-Hackathon/display-graph.html
+
+### Neovis.js
+
+Based on vis
+
+https://github.com/neo4j-contrib/neovis.js
+
