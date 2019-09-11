@@ -126,4 +126,9 @@ https://github.com/neo4j-contrib/neovis.js
 
 https://neo4j.com/bloom/
 
+**Requirements:** Neo4j Desktop
+
+> Neo4j Desktop is the new mission control center for Developers.
+> It’s free with registration, and it includes a free development license for Enterprise Edition allowing you to use Neo4j Enterprise on your local desktop for developing applications.
+
 <img src="./Neo4j.Graph.Platform.Bloom.svg">
