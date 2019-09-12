@@ -124,20 +124,39 @@ If the merge button isn't visible, but instead a greyish bar is visible, this me
 
 ## Useful Git Commands
 
-Create a new branch from where you are (the current branch) you're on right now:
+**Case:** Create a new branch from where you are (the current branch) you're on right now:
 
 ```
 git checkout -b my-new-branch
 ```
 
-See which commits my branch has that another branch (usually master) doesn't:
+```
+git branch topic/wip     # (1)
+git reset --hard HEAD~3  # (2)  NOTE: use $git reset --soft HEAD~3 (explanation below)
+git checkout topic/wip   # (3)
+```
+
+> Note: due to the "destructive" effect of a `git reset --hard` command (it does resets the index and working tree.
+> Any changes to tracked files in the working tree since <commit> are discarded), I would rather go with:
+
+```
+git reset --soft HEAD~3  # (2)
+```
+
+> This would make sure I'm not losing any private file (not added to the index).
+> The `--soft` option won't touch the index file nor the working tree at all (but resets the head to <commit>, just like all modes do).
+
+
+**Case:** See which commits my branch has that another branch (usually master) doesn't:
 
 ```
 git cherry -v master
 ```
 
-See a file as it is in another branch (usually master) (since that file might have modifications in your branch, and you'd like to see the full file instead of the diff for it):
+**Case:**  See a file as it is in another branch (usually master) (since that file might have modifications in your branch, and you'd like to see the full file instead of the diff for it):
 
 ```
 git show master:path/to/MyFile.java
 ```
+
+
