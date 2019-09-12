@@ -163,6 +163,41 @@ Example: martin/bug/123456/fixed-import-issue
 > Example: fixed-import-issue
 
 
+## Git Config Files
+
+**Case:** Set your username:
+
+```
+git config --global user.name "FIRST_NAME LAST_NAME"
+```
+
+**Case:** Set your email address
+
+```
+git config --global user.email "MY_NAME@example.com"
+```
+
+**Case:** Edit a specified config file
+
+```
+git config --global --edit
+```
+```
+git config --system --edit
+```
+```
+git config --local --edit
+```
+
+### Git Config Files on Windows
+
+The system Git config file is found in the `mingw32\etc` folder of the Git installation.
+
+The global Git configuration file is found in the root of the user’s local profile or home directory `C:\Users\git-user\`.
+
+The local Git config file is stored inside the `.git` directory of the repository in which you are working.
+
+
 ## Useful Git Commands
 
 **Case:** Create a new branch from where you are (the current branch) you're on right now:
