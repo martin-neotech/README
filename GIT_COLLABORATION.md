@@ -120,7 +120,42 @@ which will find 2.2-a-nice-feature in jakes fork, create a local branch for it i
 If there's a need for enhancing the pull request, the author or possibly you can make additional commits to the branch and push them just as usual and they will show up in the pull request as part of the conversation, and the discussion moves on from there. When you're happy with the pull request click the green "Merge" button.
 If the merge button isn't visible, but instead a greyish bar is visible, this means that merging the pull request would result in conflicts. This is the authors responsibility to keep up to date and resolve, so ping him/her about it. The changes will then be visible in the pull request as part of the conversation and the green "Merge" button should be visible again.
 
+## Git Branche Naming Practices
 
+A **reference** is used in Git to specify **branches** and **tags**.
+
+Git imposes the following rules on how references are named: https://git-scm.com/docs/git-check-ref-format
+
+https://stackoverflow.com/questions/273695/what-are-some-examples-of-commonly-used-practices-for-naming-git-branches
+
+https://github.com/agis/git-style-guide
+
+
+**name/work_class/issue-tracker-number/short-description**
+
+All lowercase UTF-8 encoding.
+
+Example: martin/bug/123456/fixed-import-issue
+
+> **name:**
+> Name of developer
+
+
+> **work_class:**
+> Description Class that is describing what type of work have been done.
+>
+> Examples:
+> wip       Works in progress; stuff I know won't be finished soon
+> feat      Feature I'm adding or expanding
+> bug       Bug fix or experiment
+> junk      Throwaway branch created to experiment
+
+> **issue-tracker-number:**
+> If there is any tracking number, use this. Or generate a unique ID.
+
+> **short-description:**
+> A short description of work.
+> Example: fixed-import-issue
 
 ## Useful Git Commands
 
