@@ -246,3 +246,15 @@ https://help.github.com/en/articles/changing-a-remotes-url#switching-remote-urls
 
 https://help.github.com/en/articles/testing-your-ssh-connection
 
+
+```
+ssh -T git@github.com
+# Attempts to ssh to GitHub
+```
+
+
+```
+git remote set-url origin ssh://git@github.com/martin-neotech/README.git
+```
+
+
