@@ -139,23 +139,29 @@ Example: martin/bug/123456/fixed-import-issue
 
 > **name:**
 > Name of developer
-
-
+>
+>
 > **work_class:**
 > Description Class that is describing what type of work have been done.
+>
 >
 > Examples:
 > wip       Works in progress; stuff I know won't be finished soon
 > feat      Feature I'm adding or expanding
 > bug       Bug fix or experiment
 > junk      Throwaway branch created to experiment
-
+>
+>
 > **issue-tracker-number:**
-> If there is any tracking number, use this. Or generate a unique ID.
-
+> If there is any tracking number, use this.
+> Or generate a unique ID.
+> UUIDv4: https://www.uuidgenerator.net/version4
+>
+>
 > **short-description:**
 > A short description of work.
 > Example: fixed-import-issue
+
 
 ## Useful Git Commands
 
