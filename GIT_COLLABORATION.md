@@ -239,3 +239,7 @@ git show master:path/to/MyFile.java
 ## Generating SSH Key
 
 https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
+
+https://help.github.com/en/articles/changing-a-remotes-url#switching-remote-urls-from-https-to-ssh
