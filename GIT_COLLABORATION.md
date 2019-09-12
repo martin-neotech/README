@@ -243,3 +243,6 @@ https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-th
 https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
 
 https://help.github.com/en/articles/changing-a-remotes-url#switching-remote-urls-from-https-to-ssh
+
+https://help.github.com/en/articles/testing-your-ssh-connection
+
