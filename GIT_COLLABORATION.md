@@ -38,8 +38,8 @@ These branches will be used for issuing pull requests later, hence the value of 
 So assuming you'd like to branch off from master:
 
 ```
-git checkout 2.3
-git checkout -b 2.3-my-new-feature
+git checkout 4.0
+git checkout -b 4.0-my-new-feature
 ```
 
 will create the branch 2.3-my-new-feature from the 2.3 branch.
@@ -52,22 +52,33 @@ Assuming you've committed something do:
 git push -u origin HEAD
 ```
 
-which will push your changes to a remote branch in your fork with the same name as your current local banch, i.e. 2.3-my-new-feature. Any consecutive pushes can either just be done with git push (for pushing changes to all your local branch to which ever remote branches they are associated with) or git push origin HEAD (for pushing changes from your current branch only).
-Keeping your branch in sync with neo4j (upstream)
-As your branch lives on it will probably get more commits to it, but at the same time lag behind neo4j upstream branch it was created from, as other features and changes goes in there. Constantly syncing up with upstream is a good practice to avoid a potentially big merge later. If you only have got local commits in your branch you can do a "rebase" to temporarily undo your changes, pull in new commits from upstream and apply all your commits on top of those, keeping commits and messages, essentially moving them to the top of the git log.
+which will push your changes to a remote branch in your fork with the same name as your current local banch, i.e. 2.3-my-new-feature.
+
+> Any consecutive pushes can either just be done with git push (for pushing changes to all your local branch to which ever remote branches they are associated with) or git push origin HEAD (for pushing changes from your current branch only).
+
+###Keeping your branch in sync with neo4j (upstream)
+
+> As your branch lives on it will probably get more commits to it, but at the same time lag behind neo4j upstream branch it was created from, as other features and changes goes in there.
+
+**rebase**
+
+Constantly syncing up with upstream is a good practice to avoid a potentially big merge later. If you only have got local commits in your branch you can do a "rebase" to temporarily undo your changes, pull in new commits from upstream and apply all your commits on top of those, keeping commits and messages, essentially moving them to the top of the git log.
 
 ```
 git fetch upstream
-git rebase upstream/2.3
+git rebase upstream/4.0
 git push -f origin HEAD
 ```
+
+**merge**
 
 If you've got already pushed changes, i.e. you have a remote branch that your branch point to and don't want to rewrite its history (for example if you're collaborating with other developers on that branch) you're better off merging instead of rebasing to keep the git history intact:
 
 ```
 git fetch upstream
-git merge upstream/2.3
+git merge upstream/4.0
 ```
+
 
 ## Pull Requests
 
