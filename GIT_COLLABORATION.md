@@ -30,7 +30,7 @@ git fetch origin
 The last fetch is perhaps unnecessary, but generally it's a good thing after you've added a fork to your repository list.
 
 
-##Branches
+## Branches
 
 When developing new stuff do that in branches, as isolated as possible.
 These branches will be used for issuing pull requests later, hence the value of isolating features from each other.
@@ -56,7 +56,7 @@ which will push your changes to a remote branch in your fork with the same name 
 
 > Any consecutive pushes can either just be done with git push (for pushing changes to all your local branch to which ever remote branches they are associated with) or git push origin HEAD (for pushing changes from your current branch only).
 
-###Keeping your branch in sync with neo4j (upstream)
+### Keeping your branch in sync with neo4j (upstream)
 
 > As your branch lives on it will probably get more commits to it, but at the same time lag behind neo4j upstream branch it was created from, as other features and changes goes in there.
 
