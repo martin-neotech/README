@@ -59,23 +59,55 @@ which will push your changes to a remote branch in your fork with the same name 
 ### Keeping your branch in sync with neo4j (upstream)
 
 > As your branch lives on it will probably get more commits to it, but at the same time lag behind neo4j upstream branch it was created from, as other features and changes goes in there.
+> Constantly syncing up with upstream is a good practice to avoid a potentially big merge later.
 
-**rebase**
+**Case:** Show origin and upstream
 
-Constantly syncing up with upstream is a good practice to avoid a potentially big merge later. If you only have got local commits in your branch you can do a "rebase" to temporarily undo your changes, pull in new commits from upstream and apply all your commits on top of those, keeping commits and messages, essentially moving them to the top of the git log.
+```
+git remote -v
+```
+Result:
+```
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+```
+
+**Case:** Get newest data from remote upstream repository to local upstream repository
 
 ```
 git fetch upstream
+```
+
+**Case:** Find and change to a branch that you want to update.
+
+```
+git branch 
+```
+
+```
+git checkout BRANCH_NAME 
+```
+
+**rebase**
+
+If you only have got local commits in your branch you can do a rebase.
+This will temporarily undo your changes, pull in new commits from upstream and apply all your commits on top of those.
+Essentially moving commits and messages to the top of the git log.
+
+```
 git rebase upstream/4.0
 git push -f origin HEAD
 ```
 
 **merge**
 
-If you've got already pushed changes, i.e. you have a remote branch that your branch point to and don't want to rewrite its history (for example if you're collaborating with other developers on that branch) you're better off merging instead of rebasing to keep the git history intact:
+If you've got already pushed changes, i.e. you have a remote branch that your branch point to and don't want to rewrite its history.
+> For example if you're collaborating with other developers on that branch.
+Then you are better off merging instead of rebasing to keep the git history intact.
 
 ```
-git fetch upstream
 git merge upstream/4.0
 ```
 
