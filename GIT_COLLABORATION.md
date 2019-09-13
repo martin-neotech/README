@@ -35,7 +35,17 @@ The last fetch is perhaps unnecessary, but generally it's a good thing after you
 When developing new stuff do that in branches, as isolated as possible.
 These branches will be used for issuing pull requests later, hence the value of isolating features from each other.
 
-So assuming you'd like to branch off from master:
+**Case:** Get latest version from upstream and create a new wip branch.
+
+```
+git checkout master
+git fetch upstream/master
+git reset --hard upstream/master
+git branch wip
+git checkout wip
+```
+
+So assuming you'd like to branch off from branch 4.0:
 
 ```
 git checkout 4.0
