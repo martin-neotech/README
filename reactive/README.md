@@ -10,6 +10,8 @@ https://blog.noveogroup.com/2017/03/principles-reactive-programming-base-simple-
 
 ### Reactive Libraries
 
+https://auth0.com/blog/reactive-programming-in-python/
+
 | Git | Docs |
 | --- | ---- |
 | https://github.com/ReactiveX/RxPY | https://rxpy.readthedocs.io/en/latest/ |
