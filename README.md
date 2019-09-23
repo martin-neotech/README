@@ -29,8 +29,8 @@ It is based on the PackStream serialization.
 | List | list | List<Object> | Array | IList<object> |
 | Map  | dict | Map<String, Object> | Object | IDictionary<string, object> |
 | Boolean | bool | boolean | Boolean | bool |
-| Integer | int | long | Integer | long |
-| Float | float | double | Number | double |
+| Integer (64 bits) | int | [long](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html) | Integer | long |
+| Float (64 bits) | float | [double](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html) | Number | double |
 | String (UTF-8) | str | String | String | string |
 | ByteArray | bytearray | byte[] | Int8Array | byte[] |
 
@@ -55,6 +55,10 @@ It is based on the PackStream serialization.
 JavaScript has no native integer type so a custom Integer type is provided. For convenience, this can be disabled through configuration so that the native Number type is used instead. Note that this can lead to a loss of precision.
 
 C# DateTime zone names adhere to the https://www.iana.org/time-zones
+
+Python 3 int do not have a maximum. But is restricted to the Bolt Integer type range.
+
+> Java long: The long data type is a 64-bit signed two's complement integer. It has a minimum value of -9,223,372,036,854,775,808 and a maximum value of 9,223,372,036,854,775,807 (inclusive).
 
 # Neo4j Drivers
 
