@@ -21,6 +21,29 @@ It is based on the PackStream serialization.
 + Smart client routing for clusters.
 + Load balancing and failover for clusters.
 
+## Bolt Types
+
+| Bolt | Python 3 |
+| ---- | -------- |
+| null | None |
+| List | list |
+| Map  | dict |
+| Boolean | bool |
+| Integer | int |
+| Float | float |
+| String (UTF-8) | str |
+| ByteArray | bytearray |
+| Date | neotime.Date |
+| Time | neotime.Time |
+| LocalTime | neotime.Time |
+| DateTime | neotime.DateTime |
+| LocalDateTime | neotime.DateTime |
+| Duration | neotime.Duration |
+| Point | Point |
+| Node | Node |
+| Relationship | Relationship |
+| Path | Path |
+
 
 # Neo4j Drivers
 
