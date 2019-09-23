@@ -52,13 +52,17 @@ It is based on the PackStream serialization.
 
 **Note:** Node, Relationship and Path can only be found in query results.
 
-JavaScript has no native integer type so a custom Integer type is provided. For convenience, this can be disabled through configuration so that the native Number type is used instead. Note that this can lead to a loss of precision.
+**JavaScript:** Has no native integer type so a custom Integer type is provided. For convenience, this can be disabled through configuration so that the native Number type is used instead. Note that this can lead to a loss of precision.
 
-C# DateTime zone names adhere to the https://www.iana.org/time-zones
+**C#:** DateTime zone names adhere to the https://www.iana.org/time-zones
 
-Python 3 int do not have a maximum. But is restricted to the Bolt Integer type range.
+**Python 3:**
 
-> Java long: The long data type is a 64-bit signed two's complement integer. It has a minimum value of -9,223,372,036,854,775,808 and a maximum value of 9,223,372,036,854,775,807 (inclusive).
+int do not have a maximum. But is restricted to the Bolt Integer type range.
+
+Floating point numbers are usually implemented using double in C; information about the precision and internal representation of floating point numbers for the machine on which your program is running is available in sys.float_info.
+
+**Java:** The long data type is a 64-bit signed two's complement integer. It has a minimum value of -9,223,372,036,854,775,808 and a maximum value of 9,223,372,036,854,775,807 (inclusive).
 
 # Neo4j Drivers
 
