@@ -23,27 +23,38 @@ It is based on the PackStream serialization.
 
 ## Bolt Types
 
-| Bolt | Python 3 |
-| ---- | -------- |
-| null | None |
-| List | list |
-| Map  | dict |
-| Boolean | bool |
-| Integer | int |
-| Float | float |
-| String (UTF-8) | str |
-| ByteArray | bytearray |
-| Date | neotime.Date |
-| Time | neotime.Time |
-| LocalTime | neotime.Time |
-| DateTime | neotime.DateTime |
-| LocalDateTime | neotime.DateTime |
-| Duration | neotime.Duration |
-| Point | Point |
-| Node | Node |
-| Relationship | Relationship |
-| Path | Path |
+| Bolt | Python 3 | Java | JavaScript | C# |
+| ---- | -------- | ---- | ---------- | -- |
+| null | None | null | null | null |
+| List | list | List<Object> | Array | IList<object> |
+| Map  | dict | Map<String, Object> | Object | IDictionary<string, object> |
+| Boolean | bool | boolean | Boolean | bool |
+| Integer | int | long | Integer | long |
+| Float | float | double | Number | double |
+| String (UTF-8) | str | String | String | string |
+| ByteArray | bytearray | byte[] | Int8Array | byte[] |
 
+| Bolt | Python 3 | Java |
+| ---- | -------- | ---- |
+| Date | neotime.Date | LocalDate | Date | LocalDate |
+| Time | neotime.Time | OffsetTime | Time | OffsetTime |
+| LocalTime | neotime.Time | LocalTime | LocalTime | LocalTime |
+| DateTime | neotime.DateTime | ZonedDateTime | DateTime | ZonedDateTime |
+| LocalDateTime | neotime.DateTime | LocalDateTime | LocalDateTime | LocalDateTime |
+| Duration | neotime.Duration | IsoDuration | Duration | Duration |
+  
+| Bolt | Python 3 | Java |
+| ---- | -------- | ---- |
+| Point | Point | Point | Point | Point |
+| Node | Node | Node | Node | INode |
+| Relationship | Relationship | Relationship | Relationship | IRelationship |
+| Path | Path | Path | Path | IPath |
+
+**Note:** Node, Relationship and Path can only be found in query results.
+
+JavaScript has no native integer type so a custom Integer type is provided. For convenience, this can be disabled through configuration so that the native Number type is used instead. Note that this can lead to a loss of precision.
+
+C# DateTime zone names adhere to the https://www.iana.org/time-zones
 
 # Neo4j Drivers
 
