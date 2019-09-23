@@ -34,8 +34,8 @@ It is based on the PackStream serialization.
 | String (UTF-8) | str | String | String | string |
 | ByteArray | bytearray | byte[] | Int8Array | byte[] |
 
-| Bolt | Python 3 | Java |
-| ---- | -------- | ---- |
+| Bolt | Python 3 | Java | JavaScript | C# |
+| ---- | -------- | ---- | ---------- | -- |
 | Date | neotime.Date | LocalDate | Date | LocalDate |
 | Time | neotime.Time | OffsetTime | Time | OffsetTime |
 | LocalTime | neotime.Time | LocalTime | LocalTime | LocalTime |
@@ -43,8 +43,8 @@ It is based on the PackStream serialization.
 | LocalDateTime | neotime.DateTime | LocalDateTime | LocalDateTime | LocalDateTime |
 | Duration | neotime.Duration | IsoDuration | Duration | Duration |
   
-| Bolt | Python 3 | Java |
-| ---- | -------- | ---- |
+| Bolt | Python 3 | Java | JavaScript | C# |
+| ---- | -------- | ---- | ---------- | -- |
 | Point | Point | Point | Point | Point |
 | Node | Node | Node | Node | INode |
 | Relationship | Relationship | Relationship | Relationship | IRelationship |
