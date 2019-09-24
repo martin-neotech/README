@@ -122,6 +122,16 @@ git merge upstream/4.0
 ```
 
 
+**Case:** With the 5 commands below you can sync your forked repository with the original repository and push the changes to your Github repository.
+
+```
+git remote add upstream https://github.com/[Original Owner Username]/[Original Repository].git
+git fetch upstream
+git checkout master
+git merge upstream/master
+git push
+```
+
 ## Pull Requests
 
 When you're considered DONE with your feature or similar and would like to get someone else to do peer review for then finally going into master you issue a pull request for your branch.
