@@ -38,7 +38,7 @@
 or
 
 ```#Python3
-# B
+# Suggestion B
 {
   "id": 321,
   "type": "RELATIONSHIP_TYPE",
