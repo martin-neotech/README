@@ -7,6 +7,7 @@
 1. Data about the object to be used in data analytics.
 2. Easy to manipulate and work with.
 3. Redundancy is removed and thus a nice data representation is needed.
+4. JSON-like data for easy of use.
 ```
 
 ### Node
