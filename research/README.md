@@ -109,16 +109,42 @@ Relationship.data()     - Relationship Suggestion B
 Path.data(node_id=True) - Path Suggestion B or C depending on the keyword to data.
 ```
 
-## Dates
+## Date and Time
 
 https://en.wikipedia.org/wiki/ISO_8601
 
+https://www.iso.org/iso-8601-date-and-time-format.html
 
-Python
+https://stackoverflow.com/questions/2150739/iso-time-iso-8601-in-python
 
-Java
+https://www.cl.cam.ac.uk/~mgk25/iso-time.html
 
-JavaScript: https://momentjs.com/
+
+**Python**
+
+https://docs.python.org/3.7/library/datetime.html#datetime.date.isoformat
+
+```#Python3
+# UTC to ISO 8601 with TimeZone information (Python 3)
+import datetime
+datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc).isoformat()
+```
+
+```#Python2
+import os
+from datetime import datetime
+import pytz  # pip install pytz
+ts = os.path.getctime(some_file)
+dt = datetime.fromtimestamp(ts, pytz.timezone('America/New_York'))
+dt.isoformat()
+'2015-11-27T00:29:06.839600-05:00'
+```
+
+**Java**
+
+**JavaScript**
+
+https://momentjs.com/
 
 
 
