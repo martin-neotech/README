@@ -164,6 +164,10 @@ https://momentjs.com/
 
 ## Points
 
+https://docs.scipy.org/doc/scipy/reference/tutorial/spatial.html
+
+https://docs.scipy.org/doc/scipy/reference/spatial.html#module-scipy.spatial
+
 
 ## JSON
 
