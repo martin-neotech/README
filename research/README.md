@@ -119,8 +119,23 @@ https://stackoverflow.com/questions/2150739/iso-time-iso-8601-in-python
 
 https://www.cl.cam.ac.uk/~mgk25/iso-time.html
 
+**Bolt**
+
++Date
++Time
++LocalTime
++DateTime
++LocalDateTime
++Duration
+
 
 **Python**
+
++neotime.Date
++neotime.Time
++neotime.DateTime
++neotime.DateTime
++neotime.Duration
 
 https://docs.python.org/3.7/library/datetime.html#datetime.date.isoformat
 
