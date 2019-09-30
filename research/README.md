@@ -121,21 +121,20 @@ https://www.cl.cam.ac.uk/~mgk25/iso-time.html
 
 **Bolt**
 
-+Date
-+Time
-+LocalTime
-+DateTime
-+LocalDateTime
-+Duration
++ Date
++ Time
++ LocalTime
++ DateTime
++ LocalDateTime
++ Duration
 
 
 **Python**
 
-+neotime.Date
-+neotime.Time
-+neotime.DateTime
-+neotime.DateTime
-+neotime.Duration
++ neotime.Date
++ neotime.Time
++ neotime.DateTime
++ neotime.Duration
 
 https://docs.python.org/3.7/library/datetime.html#datetime.date.isoformat
 
