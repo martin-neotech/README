@@ -195,6 +195,14 @@ Point.data("z", "x", "y")
 (3,1,2)  # (z, x, y)
 ```
 
+## GEO DATA
+
+https://www.gistandards.eu/gis-standards/
+
+https://en.wikipedia.org/wiki/Geospatial_metadata
+
+https://www.iso.org/standard/67039.html
+
 
 ## JSON
 
