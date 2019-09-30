@@ -1,7 +1,5 @@
 # README
 
-## Graph
-
 ```#Python3
 .data() method will return
 1. Data about the object to be used in data analytics.
@@ -9,6 +7,8 @@
 3. Redundancy is removed and thus a nice data representation is needed.
 4. JSON-like data for easy of use.
 ```
+
+## Graph
 
 ### Node
 
@@ -168,6 +168,32 @@ https://momentjs.com/
 https://docs.scipy.org/doc/scipy/reference/tutorial/spatial.html
 
 https://docs.scipy.org/doc/scipy/reference/spatial.html#module-scipy.spatial
+
+### 2D
+
+```#Python3
+Point.data()
+(1,2) # (x, y)
+```
+
+```#Python3
+# Suggestion return order based on keyword
+Point.data("y","x")
+(2,1) # (y, x)
+```
+
+### 3D
+
+```#Python3
+Point.data()
+(1,2,3)  # (x, y, z)
+```
+
+```#Python3
+# Suggestion return order based on keyword
+Point.data("z", "x", "y")
+(3,1,2)  # (z, x, y)
+```
 
 
 ## JSON
