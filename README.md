@@ -34,21 +34,26 @@ It is based on the PackStream serialization.
 | String (UTF-8) | str | String | String | string |
 | ByteArray | bytearray | byte[] | Int8Array | byte[] |
 
-| Bolt | Python 3 | Java | JavaScript | C# |
-| ---- | -------- | ---- | ---------- | -- |
-| Date | neotime.Date | LocalDate | Date | LocalDate |
-| Time | neotime.Time | OffsetTime | Time | OffsetTime |
-| LocalTime | neotime.Time | LocalTime | LocalTime | LocalTime |
-| DateTime | neotime.DateTime | ZonedDateTime | DateTime | ZonedDateTime |
-| LocalDateTime | neotime.DateTime | LocalDateTime | LocalDateTime | LocalDateTime |
-| Duration | neotime.Duration | IsoDuration | Duration | Duration |
+| Bolt | Description | Python 3 | Java | JavaScript | C# |
+| ---- | ----------- | -------- | ---- | ---------- | -- |
+| Date | A date without a time-zone in the ISO-8601 calendar system. Example: `2007-12-03` | neotime.Date | LocalDate | Date | LocalDate |
+| Time | A time with an offset from UTC/Greenwich in the ISO-8601 calendar system, Example: `10:15:30+01:00` | neotime.Time | OffsetTime | Time | OffsetTime |
+| LocalTime | A time without a explicit time-zone in the ISO-8601 calendar system. Example: `10:15:30` | neotime.Time | LocalTime | LocalTime | LocalTime |
+| DateTime | A date-time with a time-zone in the ISO-8601 calendar system. Example: `2007-12-03T10:15:30+01:00 Europe/Paris` | neotime.DateTime | ZonedDateTime | DateTime | ZonedDateTime |
+| LocalDateTime | A date-time without a time-zone in the ISO-8601 calendar system. Example: `2007-12-03T10:15:30` | neotime.DateTime | LocalDateTime | LocalDateTime | LocalDateTime |
+| Duration | A temporal amount. | neotime.Duration | IsoDuration | Duration | Duration |
   
-| Bolt | Python 3 | Java | JavaScript | C# |
-| ---- | -------- | ---- | ---------- | -- |
-| Point | Point | Point | Point | Point |
-| Node | Node | Node | Node | INode |
-| Relationship | Relationship | Relationship | Relationship | IRelationship |
-| Path | Path | Path | Path | IPath |
+| Bolt | Description | Python 3 | Java | JavaScript | C# |
+| ---- | ----------- | -------- | ---- | ---------- | -- |
+| Node | Snapshot of a node within a graph database. | Node | Node | Node | INode |
+| Relationship | Snapshot of a relationship within a graph database. | Relationship | Relationship | Relationship | IRelationship |
+| Path | Alternating sequence of nodes and relationships. | Path | Path | Path | IPath |
+
+
+| Bolt | Description | Python 3 | Java | JavaScript | C# |
+| ---- | ----------- | -------- | ---- | ---------- | -- |
+| Point | Represents a single location in 2-dimensional or 3-dimensional space. | Point | Point | Point | Point |
+
 
 **Note:** Node, Relationship and Path can only be found in query results.
 
