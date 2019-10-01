@@ -12,16 +12,16 @@
 
 ### Node
 
-### Bolt Representation
+#### Bolt Representation
 ```java
 Node(
     Integer(id)
     List<String>(labels)
     Map<String, Value>(properties)
-)
+);
 ```
 
-### Python .data()
+#### Python .data()
 
 ```python
 {
@@ -32,6 +32,20 @@ Node(
 ```
 
 ### Relationship
+
+#### Bolt Representation
+
+```java
+Relationship(
+    Integer(id)
+    Integer(startNodeId)
+    Integer(endNodeId)
+    String(type)
+    Map<String, Value>(properties)
+);
+```
+
+#### Python .data()
 
 ```python
 # Suggestion A
@@ -62,6 +76,24 @@ or
 ```
 
 ### Path
+
+#### Bolt Representation
+
+```java
+UnboundRelationship(
+    Integer(id)
+    String(type)
+    Map<String, Value>(properties)
+); //A relationship without information of start and end node id.
+
+Path(
+    List<Node>(nodes)
+    List<UnboundRelationship>(rels)
+    List<Integer>(ids)
+);
+```
+
+#### Python .data()
 
 ```python
 # Suggestion A
