@@ -15,9 +15,9 @@
 #### Bolt Representation
 ```java
 Node(
-    Integer(id)
-    List<String>(labels)
-    Map<String, Value>(properties)
+    Integer(id),
+    List<String>(labels),
+    Map<String, Value>(properties),
 );
 ```
 
@@ -37,11 +37,11 @@ Node(
 
 ```java
 Relationship(
-    Integer(id)
-    Integer(startNodeId)
-    Integer(endNodeId)
-    String(type)
-    Map<String, Value>(properties)
+    Integer(id),
+    Integer(startNodeId),
+    Integer(endNodeId),
+    String(type),
+    Map<String, Value>(properties),
 );
 ```
 
@@ -81,15 +81,15 @@ or
 
 ```java
 UnboundRelationship(
-    Integer(id)
-    String(type)
-    Map<String, Value>(properties)
+    Integer(id),
+    String(type),
+    Map<String, Value>(properties),
 ); //A relationship without information of start and end node id.
 
 Path(
-    List<Node>(nodes)
-    List<UnboundRelationship>(rels)
-    List<Integer>(ids)
+    List<Node>(nodes),
+    List<UnboundRelationship>(rels),
+    List<Integer>(ids), //list of relationship id and node id to represent the path. [n1, r1, n2, r2, n3]
 );
 ```
 
@@ -165,12 +165,14 @@ https://www.cl.cam.ac.uk/~mgk25/iso-time.html
 
 **Bolt**
 
-+ Date
-+ Time
-+ LocalTime
-+ DateTime
-+ LocalDateTime
-+ Duration
+Using ISO-8601
+
++ Date `2007-12-03`
++ Time `10:15:30+01:00`
++ LocalTime `10:15:30`
++ DateTime `2007-12-03T10:15:30+01:00 Europe/Paris`
++ LocalDateTime `2007-12-03T10:15:30`
++ Duration `A temporal amount`
 
 
 **Python**
