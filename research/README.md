@@ -33,7 +33,7 @@ Node(
 
 ### Relationship
 
-```#Python3
+```python
 # Suggestion A
 {
   "id": 321,
@@ -48,7 +48,7 @@ Node(
 
 or
 
-```#Python3
+```python
 # Suggestion B
 {
   "id": 321,
@@ -63,7 +63,7 @@ or
 
 ### Path
 
-```#Python3
+```python
 # Suggestion A
 {
   "nodes": [a.data(), b.data(), c.data()],
@@ -73,7 +73,7 @@ or
 
 or
 
-```#Python3
+```python
 # Suggestion B
 {
   "nodes": OrderedDict(a.id: a.data(), b.id: b.data(), c.id: c.data()),
@@ -93,7 +93,7 @@ nodes.values() == [a.data(), b.data(), c.data()]
 
 or
 
-```#Python3
+```python
 # Suggestion C
 {
   "node_ids": [a.id, b.id, c.id],
@@ -107,7 +107,7 @@ This requires that the node data is available somewhere else.
 
 Recommendation
 
-```#Python3
+```python
 Node.data()         - No data loss
 Relationship.data() - Relationship Suggestion B
 Path.data()         - Path Suggestion B
@@ -115,7 +115,7 @@ Path.data()         - Path Suggestion B
 
 or
 
-```#Python3
+```python
 Node.data()             - No data loss
 Relationship.data()     - Relationship Suggestion B
 Path.data(node_id=True) - Path Suggestion B or C depending on the keyword to data.
@@ -150,13 +150,13 @@ https://www.cl.cam.ac.uk/~mgk25/iso-time.html
 
 https://docs.python.org/3.7/library/datetime.html#datetime.date.isoformat
 
-```#Python3
+```python
 # UTC to ISO 8601 with TimeZone information (Python 3)
 import datetime
 datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc).isoformat()
 ```
 
-```#Python2
+```python
 import os
 from datetime import datetime
 import pytz  # pip install pytz
@@ -182,12 +182,12 @@ https://docs.scipy.org/doc/scipy/reference/spatial.html#module-scipy.spatial
 
 ### 2D
 
-```#Python3
+```python
 Point.data()
 (1,2) # (x, y)
 ```
 
-```#Python3
+```python
 # Suggestion return order based on keyword
 Point.data("y","x")
 (2,1) # (y, x)
@@ -195,12 +195,12 @@ Point.data("y","x")
 
 ### 3D
 
-```#Python3
+```python
 Point.data()
 (1,2,3)  # (x, y, z)
 ```
 
-```#Python3
+```python
 # Suggestion return order based on keyword
 Point.data("z", "x", "y")
 (3,1,2)  # (z, x, y)
