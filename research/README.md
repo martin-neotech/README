@@ -13,7 +13,7 @@
 ### Node
 
 ### Bolt Representation
-```#Java
+```java
 Node(
     Integer(id)
     List<String>(labels)
@@ -23,7 +23,7 @@ Node(
 
 ### Python .data()
 
-```#Python3
+```python
 {
   "id": 123,
   "labels": [Label1, Label2,],
