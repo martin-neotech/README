@@ -12,6 +12,17 @@
 
 ### Node
 
+### Bolt Representation
+```#Java
+Node(
+    Integer(id)
+    List<String>(labels)
+    Map<String, Value>(properties)
+)
+```
+
+### Python .data()
+
 ```#Python3
 {
   "id": 123,
