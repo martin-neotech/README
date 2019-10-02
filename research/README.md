@@ -177,6 +177,8 @@ https://www.iana.org/time-zones
 
 https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+https://nbsoftsolutions.com/blog/iso-8601-and-nanosecond-precision-across-languages
+
 ### ISO 8601 duration format
 
 ISO 8601 Durations are expressed using the following format, where (n) is replaced by the value for each of the date and time elements that follow the (n):
