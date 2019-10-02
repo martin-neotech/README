@@ -208,6 +208,10 @@ Complete date plus hours, minutes and seconds:
 
 YYYY-MM-DDThh:mm:ss[.mmm]TZD (eg 2012-03-29T10:05:45-06:00)
 
+millisecond resolution: YYYY-MM-DDThh:mm:ss.mmmTZD (eg 2012-03-29T10:05:45.000-06:00)
+
+nanosecond resolution: YYYY-MM-DDThh:mm:ss.mmmmmmmmmTZD (eg 2012-03-29T10:05:45.000000000-06:00)
+
 Where:
 
 YYYY = four-digit year
@@ -218,6 +222,7 @@ hh = two digits of an hour (00 through 23, AM/PM not included)
 mm = two digits of a minute (00 through 59)
 ss = two digits of a second (00 through 59)
 mmm = three digits of a millisecond (000 through 999)
+nnnnnnnnn = nine digits of a nanosecond (000000000 through 999999999)
 TZD = time zone designator (Z or +hh:mm or -hh:mm), the + or - values indicate how far ahead or behind a time zone is from the UTC (Coordinated Universal Time) zone.
 
 
@@ -243,19 +248,28 @@ Local
 + neotime.Duration
 
 ```
+import numpy
+numpy.datetime64('2016-06-10T21:42:24.76073899')
+# numpy.datetime64('2016-06-10T21:42:24.760738990+0000')
+# Created a datetime with nanosecond resolution
+```
+
+```
 DateTime: Suggestion A
 
 DateTime.data()
 
 {
-  "timestamp": "2011-12-03T10:15:30+01:00",
+  "timestamp": "2011-12-03T10:15:30.000000000+01:00",
   "timezone": "Europe/Paris"
 }
 
 {
-  "timestamp": "2011-12-03T10:15:30+00:00",
+  "timestamp": "2011-12-03T10:15:30.000000000+00:00",
   "timezone": "UTC"
 }
+
+# Explicit show all the nanoseconds
 ```
 
 ```
@@ -264,14 +278,16 @@ Time: Suggestion A
 Time.data()
 
 {
-  "timestamp": "10:15:30+01:00",
+  "timestamp": "10:15:30.000000000+01:00",
   "timezone": "Europe/Paris"
 }
 
 {
-  "timestamp": "10:15:30+00:00",
+  "timestamp": "10:15:30.000000000+00:00",
   "timezone": "UTC"
 }
+
+# Explicit show all the nanoseconds
 ```
 
 https://docs.python.org/3.7/library/datetime.html#datetime.date.isoformat
