@@ -134,24 +134,34 @@ or
 
 This requires that the node data is available somewhere else.
 ```
+or
 
-### Conclusion
+```python
+# Suggestion D
+{
+  "node_id_index: {"a.id: 0, b.id: 1, c.id: 2} # This mapps the first occurence of node_id in the nodes list.
+  "nodes": [a.data(), b.data(), c.data()],
+  "relationships": [ab.data(), bc.data()]}
+}
+
+There could be several occurencies of the same node in a path if the relationships are specific to return to a node.
+Suggestion B can not handle that case.
+```
+
+### Conclusion and Recommendation
 
 Recommendation
 
 ```python
 Node.data()         - No data loss
 Relationship.data() - Relationship Suggestion B
-Path.data()         - Path Suggestion B
+Path.data()         - Path Suggestion D
 ```
 
-or
+Then how shouls the properties be handled?
+Should it recursively serialize the properties values in the data method or is that a too expensive operation by default.
 
-```python
-Node.data()             - No data loss
-Relationship.data()     - Relationship Suggestion B
-Path.data(node_id=True) - Path Suggestion B or C depending on the keyword to data.
-```
+.data(recursive=False)
 
 ## Date and Time
 
