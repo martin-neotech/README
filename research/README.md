@@ -173,16 +173,66 @@ https://stackoverflow.com/questions/2150739/iso-time-iso-8601-in-python
 
 https://www.cl.cam.ac.uk/~mgk25/iso-time.html
 
+https://www.iana.org/time-zones
+
+https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+### ISO 8601 duration format
+
+ISO 8601 Durations are expressed using the following format, where (n) is replaced by the value for each of the date and time elements that follow the (n):
+
+P(n)Y(n)M(n)DT(n)H(n)M(n)S
+
+Where:
+
+P is the duration designator (referred to as "period"), and is always placed at the beginning of the duration.
+Y is the year designator that follows the value for the number of years.
+M is the month designator that follows the value for the number of months.
+W is the week designator that follows the value for the number of weeks.
+D is the day designator that follows the value for the number of days.
+T is the time designator that precedes the time components.
+H is the hour designator that follows the value for the number of hours.
+M is the minute designator that follows the value for the number of minutes.
+S is the second designator that follows the value for the number of seconds.
+For example:
+
+P3Y6M4DT12H30M5S
+
+Represents a duration of three years, six months, four days, twelve hours, thirty minutes, and five seconds.
+
+### ISO 8601 date format
+
+Every component shown in the example below must be present when expressing a date in ISO 8601 format; this includes all punctuation characters and the "T" character. Within a string, the "T" indicates the beginning of the time element (directly following the date element). Although several date expressions exist, Remote Manager supports only the following format:
+
+Complete date plus hours, minutes and seconds:
+
+YYYY-MM-DDThh:mm:ss[.mmm]TZD (eg 2012-03-29T10:05:45-06:00)
+
+Where:
+
+YYYY = four-digit year
+MM = two-digit month (eg 03=March)
+DD = two-digit day of the month (01 through 31)
+T = a set character indicating the start of the time element
+hh = two digits of an hour (00 through 23, AM/PM not included)
+mm = two digits of a minute (00 through 59)
+ss = two digits of a second (00 through 59)
+mmm = three digits of a millisecond (000 through 999)
+TZD = time zone designator (Z or +hh:mm or -hh:mm), the + or - values indicate how far ahead or behind a time zone is from the UTC (Coordinated Universal Time) zone.
+
+
 **Bolt**
 
 Using ISO-8601
 
 + Date `2007-12-03`
-+ Time `10:15:30+01:00`
++ Time `10:15:30+01:00`, `10:15:30-01:00`
 + LocalTime `10:15:30`
-+ DateTime `2007-12-03T10:15:30+01:00 Europe/Paris`
++ DateTime `2007-12-03T10:15:30+01:00 Europe/Paris`, `2007-12-03T10:15:30-05:00 America/New_York`
 + LocalDateTime `2007-12-03T10:15:30`
-+ Duration `A temporal amount`
++ Duration `P3Y6M4DT12H30M5S`
+
+Local
 
 
 **Python**
@@ -191,6 +241,38 @@ Using ISO-8601
 + neotime.Time
 + neotime.DateTime
 + neotime.Duration
+
+```
+DateTime: Suggestion A
+
+DateTime.data()
+
+{
+  "timestamp": "2011-12-03T10:15:30+01:00",
+  "timezone": "Europe/Paris"
+}
+
+{
+  "timestamp": "2011-12-03T10:15:30+00:00",
+  "timezone": "UTC"
+}
+```
+
+```
+Time: Suggestion A
+
+Time.data()
+
+{
+  "timestamp": "10:15:30+01:00",
+  "timezone": "Europe/Paris"
+}
+
+{
+  "timestamp": "10:15:30+00:00",
+  "timezone": "UTC"
+}
+```
 
 https://docs.python.org/3.7/library/datetime.html#datetime.date.isoformat
 
