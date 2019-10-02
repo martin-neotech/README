@@ -251,6 +251,8 @@ Local
 | numpy.datetime64 | nanoseconds | https://docs.scipy.org/doc/numpy-1.11.0/reference/arrays.datetime.html |
 | dateutil | ? | https://dateutil.readthedocs.io/en/stable/ |
 | moment| ? | https://github.com/zachwill/moment |
+| pandas.Timestamp | nanoseconds | https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Timestamp.html |
+
 
 + neotime.Date
 + neotime.Time
