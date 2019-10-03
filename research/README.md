@@ -163,6 +163,26 @@ Should it recursively serialize the properties values in the data method or is t
 
 .data(recursive=False)
 
+
+## Integers
+
+### Integer - JavaScript
+
+There is only the [Number][1] data type in JS that represents numbers.
+
+Internally it is implemented as [IEEE 754][2] double precision floating point number.
+
+What it means is that - technically there is no dedicated data type that represents integer numbers.
+
+Practically it means that we can safely use only numbers that are safely representable by the aforementioned standard. And it includes integer values in the range: `[-9007199254740991; 9007199254740991]`. Both values are defined as constants: [`Number.MIN_SAFE_INTEGER`][3] and [`Number.MAX_SAFE_INTEGER`][4] correspondingly.
+
+
+  [1]: http://www.ecma-international.org/ecma-262/6.0/index.html#sec-ecmascript-language-types-number-type
+  [2]: http://www.ecma-international.org/ecma-262/6.0/index.html#sec-terms-and-definitions-number-value
+  [3]: http://www.ecma-international.org/ecma-262/6.0/index.html#sec-number.min_safe_integer
+  [4]: http://www.ecma-international.org/ecma-262/6.0/index.html#sec-number.max_safe_integer
+
+
 ## Date and Time
 
 https://en.wikipedia.org/wiki/ISO_8601
@@ -180,6 +200,9 @@ https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 https://nbsoftsolutions.com/blog/iso-8601-and-nanosecond-precision-across-languages
 
 https://opensource.com/article/18/4/python-datetime-libraries
+
+https://en.wikipedia.org/wiki/UTC%2B01:00
+
 
 ### ISO 8601 duration format
 
