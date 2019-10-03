@@ -179,3 +179,56 @@ https://neo4j.com/bloom/
 > It’s free with registration, and it includes a free development license for Enterprise Edition allowing you to use Neo4j Enterprise on your local desktop for developing applications.
 
 <img src="./Neo4j.Graph.Platform.Bloom.svg">
+
+
+## REST API and HTTP API
+
+**Neo4j REST API:** https://neo4j.com/docs/rest-docs/current/ (Depricated in version 4.0)
+
+```
+GET http://localhost:7474/db/data/
+Accept: application/json; charset=UTF-8
+```
+
+Example response
+
+```
+200: OK
+Content-Type: application/json;charset=utf-8
+{
+  "extensions" : { },
+  "node" : "http://localhost:7474/db/data/node",
+  "relationship" : "http://localhost:7474/db/data/relationship",
+  "node_index" : "http://localhost:7474/db/data/index/node",
+  "relationship_index" : "http://localhost:7474/db/data/index/relationship",
+  "extensions_info" : "http://localhost:7474/db/data/ext",
+  "relationship_types" : "http://localhost:7474/db/data/relationship/types",
+  "batch" : "http://localhost:7474/db/data/batch",
+  "cypher" : "http://localhost:7474/db/data/cypher",
+  "indexes" : "http://localhost:7474/db/data/schema/index",
+  "constraints" : "http://localhost:7474/db/data/schema/constraint",
+  "transaction" : "http://localhost:7474/db/data/transaction",
+  "node_labels" : "http://localhost:7474/db/data/labels",
+  "neo4j_version" : "3.4.2-SNAPSHOT"
+}
+```
+
+
+**Neo4j HTTP API:** https://neo4j.com/docs/http-api/3.5/
+
+```
+POST http://localhost:7474/db/data/transaction/commit
+Accept: application/json; charset=UTF-8
+```
+
+Example response
+
+```
+200: OK
+Content-Type: application/json
+{
+  "statements" : [ {
+    "statement" : "CREATE (n) RETURN id(n)"
+  } ]
+}
+```
