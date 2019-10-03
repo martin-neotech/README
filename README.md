@@ -6,7 +6,7 @@ https://neo4j.com/developer/get-started/
 
 https://neo4j.com/docs/driver-manual/1.7/
 
-https://github.com/neo4j-drivers/boltkit
+
 
 # Bolt V.3
 
@@ -139,7 +139,21 @@ https://neo4j.com/docs/cypher-refcard/current/
 
 https://neo4j.com/docs/cypher-manual/current/
 
+# Neo4j Tools
 
+## Cypher Shell
+
+https://neo4j.com/docs/operations-manual/current/tools/cypher-shell/
+
+Implementation Language: Java
+
+Source: https://github.com/neo4j/cypher-shell
+
+## Boltkit
+
+Implementation Language: Python
+
+Source: https://github.com/neo4j-drivers/boltkit
 
 # Graph Visualization
 
