@@ -183,6 +183,23 @@ Practically it means that we can safely use only numbers that are safely represe
   [4]: http://www.ecma-international.org/ecma-262/6.0/index.html#sec-number.max_safe_integer
 
 
+```
+Node {identity: Integer, labels: Array(1), properties: {…}}
+identity: Integer {low: 47, high: 0}
+labels: ["Person"]
+properties: {name: "Alice", age: 10}
+```
+
+```
+Relationship {identity: Integer, start: Integer, end: Integer, type: "KNOWS", properties: {…}}
+end: Integer {low: 48, high: 0}
+identity: Integer {low: 0, high: 0}
+properties: {}
+start: Integer {low: 47, high: 0}
+type: "KNOWS"
+```
+
+
 ## Date and Time
 
 https://en.wikipedia.org/wiki/ISO_8601
