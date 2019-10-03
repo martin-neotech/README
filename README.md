@@ -234,3 +234,22 @@ Example Query, data.json
   } ]
 }
 ```
+
+Example Response:
+
+Example response
+
+```
+200: OK
+Content-Type: application/json
+{
+  "results" : [ {
+    "columns" : [ "id(n)" ],
+    "data" : [ {
+      "row" : [ 6 ],
+      "meta" : [ null ]
+    } ]
+  } ],
+  "errors" : [ ]
+}
+```
