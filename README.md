@@ -221,11 +221,13 @@ POST http://localhost:7474/db/data/transaction/commit
 Accept: application/json; charset=UTF-8
 ```
 
-Example response
-
 ```
-200: OK
-Content-Type: application/json
+curl -d "@data.json" -H "Content-Type: application/json" -X POST http://localhost:7474/db/data/transaction/commit -u neo4j:password
+```
+
+Example Query, data.json
+
+```json
 {
   "statements" : [ {
     "statement" : "CREATE (n) RETURN id(n)"
