@@ -183,6 +183,13 @@ Practically it means that we can safely use only numbers that are safely represe
   [4]: http://www.ecma-international.org/ecma-262/6.0/index.html#sec-number.max_safe_integer
 
 
+There is actually a type called BigInt which represents a true integer.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt
+
+https://tc39.es/proposal-bigint/#sec-bigint-objects
+
+
 ```
 Node {identity: Integer, labels: Array(1), properties: {…}}
 identity: Integer {low: 47, high: 0}
