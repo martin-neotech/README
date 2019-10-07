@@ -263,6 +263,12 @@ The local Git config file is stored inside the `.git` directory of the repositor
 
 ## Useful Git Commands
 
+**Case:** Push changes to remote branch
+
+```
+git push  <REMOTENAME> <LOCALBRANCHNAME>:<REMOTEBRANCHNAME> 
+```
+
 **Case:** Create a new branch from where you are (the current branch) you're on right now:
 
 ```
