@@ -121,6 +121,15 @@ Then you are better off merging instead of rebasing to keep the git history inta
 git merge upstream/4.0
 ```
 
+```
+git push -u origin HEAD
+```
+
+> Or the name of the branch can be specified also.
+
+```
+git push -u origin 4.0
+```
 
 **Case:** With the 5 commands below you can sync your forked repository with the original repository and push the changes to your Github repository.
 
