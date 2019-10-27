@@ -1,0 +1,18 @@
+GtkHeaderBar,
+GtkWindow
+{
+border-radius:0px;
+}
+
+.header-bar
+{
+padding-top: 3px;
+padding-bottom: 3px;
+font-size: 8px;
+}
+
+.header-bar.button
+{
+padding-top: 5px;
+padding-bottom: 5px;
+}
