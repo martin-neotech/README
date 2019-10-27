@@ -113,7 +113,10 @@ git push -f origin HEAD
 
 **merge**
 
+> Use rebase if possible.
+
 If you've got already pushed changes, i.e. you have a remote branch that your branch point to and don't want to rewrite its history.
+
 > For example if you're collaborating with other developers on that branch.
 Then you are better off merging instead of rebasing to keep the git history intact.
 
@@ -203,19 +206,20 @@ https://stackoverflow.com/questions/273695/what-are-some-examples-of-commonly-us
 https://github.com/agis/git-style-guide
 
 
-**name/work_class/issue-tracker-number/short-description**
+**{branchName}-{description}-{type}**
 
 All lowercase UTF-8 encoding.
 
 Example: martin/bug/123456/fixed-import-issue
 
-> **name:**
-> Name of developer
+> **branchName:**
+> 1.7
+> 4.0
 >
+> **short-description:**
+> A short description of work.
 >
-> **work_class:**
-> Description Class that is describing what type of work have been done.
->
+> **typ:**
 >
 > Examples:
 > wip       Works in progress; stuff I know won't be finished soon
@@ -223,17 +227,10 @@ Example: martin/bug/123456/fixed-import-issue
 > bug       Bug fix or experiment
 > junk      Throwaway branch created to experiment
 >
->
-> **issue-tracker-number:**
+> **issueTackerNumber:**
 > If there is any tracking number, use this.
 > Or generate a unique ID.
 > UUIDv4: https://www.uuidgenerator.net/version4
->
->
-> **short-description:**
-> A short description of work.
-> Example: fixed-import-issue
-
 
 ## Git Config Files
 
@@ -334,5 +331,22 @@ ssh -T git@github.com
 ```
 git remote set-url origin ssh://git@github.com/martin-neotech/README.git
 ```
+
+
+# Cleaning up Git History
+
+> 1. Never work on a shared branch.
+> 2. Always work on a new work in progress branch.
+> 3. Always try to rebase from upstream.
+> 4. Squash commit messages into one commit.
+
+https://medium.com/@catalinaturlea/clean-git-history-a-step-by-step-guide-eefc0ad8696d
+
+https://spin.atomicobject.com/2017/04/23/maintain-clean-git-history/
+
+https://about.gitlab.com/blog/2018/06/07/keeping-git-commit-history-clean/
+
+https://github.com/mockito/mockito/wiki/Using-git-to-prepare-your-PR-to-have-a-clean-history
+
 
 
