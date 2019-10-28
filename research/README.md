@@ -8,11 +8,12 @@
 4. JSON-like data for easy of use.
 ```
 
-## Graph
+# Graph
 
-### Node
+## Node
 
-#### Bolt Representation
+### Bolt Representation
+
 ```java
 Node(
     Integer(id),
@@ -21,7 +22,7 @@ Node(
 );
 ```
 
-#### Python .data()
+### Python Node.data()
 
 ```python
 {
@@ -31,9 +32,9 @@ Node(
 }
 ```
 
-### Relationship
+## Relationship
 
-#### Bolt Representation
+### Bolt Representation
 
 ```java
 Relationship(
@@ -45,7 +46,7 @@ Relationship(
 );
 ```
 
-#### Python .data()
+### Python Relationship.data()
 
 ```python
 # Suggestion A
@@ -75,9 +76,9 @@ or
 # This will remove redundancy about nodes, and nodes are easy to find with the node_id.
 ```
 
-### Path
+## Path
 
-#### Bolt Representation
+### Bolt Representation
 
 ```java
 UnboundRelationship(
@@ -93,7 +94,7 @@ Path(
 );
 ```
 
-#### Python .data()
+### Python Path.data()
 
 ```python
 # Suggestion A
@@ -148,7 +149,7 @@ There could be several occurencies of the same node in a path if the relationshi
 Suggestion B can not handle that case.
 ```
 
-### Conclusion and Recommendation
+## Conclusion and Recommendation
 
 Recommendation
 
@@ -164,9 +165,9 @@ Should it recursively serialize the properties values in the data method or is t
 .data(recursive=False)
 
 
-## Integers
+# Integer
 
-### Integer - JavaScript
+## Integer - JavaScript
 
 There is only the [Number][1] data type in JS that represents numbers.
 
@@ -207,7 +208,7 @@ type: "KNOWS"
 ```
 
 
-## Date and Time
+# Temporal Types, Date and Time
 
 https://en.wikipedia.org/wiki/ISO_8601
 
@@ -228,7 +229,7 @@ https://opensource.com/article/18/4/python-datetime-libraries
 https://en.wikipedia.org/wiki/UTC%2B01:00
 
 
-### ISO 8601 duration format
+## ISO 8601 duration format
 
 ISO 8601 Durations are expressed using the following format, where (n) is replaced by the value for each of the date and time elements that follow the (n):
 
@@ -251,7 +252,7 @@ P3Y6M4DT12H30M5S
 
 Represents a duration of three years, six months, four days, twelve hours, thirty minutes, and five seconds.
 
-### ISO 8601 date format
+## ISO 8601 date format
 
 Every component shown in the example below must be present when expressing a date in ISO 8601 format; this includes all punctuation characters and the "T" character. Within a string, the "T" indicates the beginning of the time element (directly following the date element). Although several date expressions exist, Remote Manager supports only the following format:
 
@@ -277,7 +278,7 @@ nnnnnnnnn = nine digits of a nanosecond (000000000 through 999999999)
 TZD = time zone designator (Z or +hh:mm or -hh:mm), the + or - values indicate how far ahead or behind a time zone is from the UTC (Coordinated Universal Time) zone.
 
 
-**Bolt**
+## Bolt Temporal Types
 
 Using ISO-8601
 
@@ -291,7 +292,7 @@ Using ISO-8601
 Local
 
 
-**Python**
+## Temporal Types Python Libraries 
 
 | library | precission | docs |
 | ------- | ---------- | ---- |
@@ -313,9 +314,20 @@ numpy.datetime64('2016-06-10T21:42:24.76073899')
 # Created a datetime with nanosecond resolution
 ```
 
-```
-DateTime: Suggestion A
+## Temporal Types Java Libraries 
 
+
+## Temporal Types JavaScript Libraries 
+
+https://momentjs.com/
+
+## DateTime
+
+> Bolt DateTime: `2007-12-03T10:15:30+01:00 Europe/Paris`, `2007-12-03T10:15:30-05:00 America/New_York`
+
+### DateTime - JSON
+
+```JSON
 DateTime.data()
 
 {
@@ -331,9 +343,25 @@ DateTime.data()
 # Explicit show all the nanoseconds
 ```
 
-```
-Time: Suggestion A
+### DateTime - Python
 
+> Temporal types: conversion to regular datetime types (date, time, datetime and timedelta)
+> this will be lossy, but this is acceptable for now.
+
+```python
+import datetime
+
+DateTime.data()
+datetime.datetime
+```
+
+## Time
+
+> Bolt Time: `10:15:30+01:00`, `10:15:30-01:00`
+
+### Time - JSON
+
+```
 Time.data()
 
 {
@@ -348,6 +376,21 @@ Time.data()
 
 # Explicit show all the nanoseconds
 ```
+
+### Time - Python
+
+## LocalTime
+
+> Bolt LocalTime: `10:15:30`
+
+## LocalDateTime
+
+> Bold LocalDateTime: `2007-12-03T10:15:30`
+
+## Duration
+
+> Bolt Duration: `P3Y6M4DT12H30M5S`
+
 
 https://docs.python.org/3.7/library/datetime.html#datetime.date.isoformat
 
@@ -367,47 +410,46 @@ dt.isoformat()
 '2015-11-27T00:29:06.839600-05:00'
 ```
 
-**Java**
-
-**JavaScript**
-
-https://momentjs.com/
 
 
 
-## Points
+
+# Spatial Types
 
 https://docs.scipy.org/doc/scipy/reference/tutorial/spatial.html
 
 https://docs.scipy.org/doc/scipy/reference/spatial.html#module-scipy.spatial
 
-### 2D
+### Point 2D
+
+> Spatial types: conversion to dicts, e.g. {"x": 1, "y": 2}
 
 ```python
 Point.data()
-(1,2) # (x, y)
+{"x": 1, "y": 2}
 ```
 
 ```python
-# Suggestion return order based on keyword
+# return order can be used in python 3.7+
 Point.data("y","x")
-(2,1) # (y, x)
+{"y": 1, "x": 2}
+
+# return order can not be used in older versions. 
+Point.data("y","x")
+{"x": 1, "y": 2}
 ```
 
-### 3D
+### Point 3D
 
 ```python
 Point.data()
-(1,2,3)  # (x, y, z)
 ```
 
 ```python
-# Suggestion return order based on keyword
 Point.data("z", "x", "y")
-(3,1,2)  # (z, x, y)
 ```
 
-## GEO DATA
+### GEO DATA
 
 https://www.gistandards.eu/gis-standards/
 
