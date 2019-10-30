@@ -120,7 +120,8 @@ Source: https://help.semmle.com/wiki/display/PYTHON/NotImplemented+is+not+an+Exc
 ```python
 import logging
 
-LOGGING_FORMAT = '%(asctime)s %(name)-12s %(levelname)-8s %(message)s'
+# LOGGING_FORMAT = '%(asctime)s %(name)-12s %(levelname)-8s %(message)s'
+LOGGING_FORMAT = "%(asctime)s — %(name)s — %(levelname)s — %(funcName)s:%(lineno)d — %(message)s"
 
 logging.basicConfig(format=LOGGING_FORMAT)
 
@@ -132,4 +133,4 @@ logger.info("Hi {}".format("Example"))
 
 logger.debug("Hi {}".format("Example"))
 ```
-
+Source: https://www.toptal.com/python/in-depth-python-logging
