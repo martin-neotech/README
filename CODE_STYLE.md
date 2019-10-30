@@ -51,3 +51,46 @@ https://github.com/neo4j/neo4j.github.com/tree/master/code-style
 **End of Statement:** Explicit use ;
 
 **Strict Mode:** Use strict code style
+
+
+# Python Style Guide
+
+## `import`
+
+> Dont use the star import, `import *`
+
+**Example module - finance.py**
+
+```python
+__all__ = ['tax1', 'tax2']  #defines the names to import when '*' is used
+ 
+tax1 = 5
+tax2 = 10
+def cost(): return 'cost'
+```
+Source: https://help.semmle.com/wiki/display/PYTHON/%27import+*%27+may+pollute+namespace
+
+
+> Explicit import the root for library modules
+
+```python
+import os
+
+os.path
+os.path.join()
+```
+
+## ``raise NotImplementedError()``
+
+```python
+class Abstract(object):
+ 
+    def wrong(self):
+        # Will raise a TypeError
+        raise NotImplemented()
+ 
+    def right(self):
+        raise NotImplementedError()
+```        
+Source: https://help.semmle.com/wiki/display/PYTHON/NotImplemented+is+not+an+Exception
+
