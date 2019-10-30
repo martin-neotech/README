@@ -310,6 +310,11 @@ git cherry -v master
 git show master:path/to/MyFile.java
 ```
 
+**Case:** Revert (reset) a single file to a specific revision:
+
+```
+git checkout <commit_hash> -- <file>
+```
 
 ## Generating SSH Key
 
