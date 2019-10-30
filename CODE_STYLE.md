@@ -76,8 +76,20 @@ Source: https://help.semmle.com/wiki/display/PYTHON/%27import+*%27+may+pollute+n
 ```python
 import os
 
-os.path
-os.path.join()
+file_dir = os.path.dirname(os.path.abspath(__file__))
+os.path.join(file_dir, "example")
+```
+
+
+> Explicit import lists of names as specified.
+> Always add a `,` at the last item, this is so version control wont show changes if new item is added in the list.
+```python
+from neo4j.graph import (
+    Graph,
+    Node,
+    Path,
+    Relationship,
+)
 ```
 
 ### ``raise NotImplementedError()``
