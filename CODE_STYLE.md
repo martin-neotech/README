@@ -106,3 +106,30 @@ class Abstract(object):
 ```        
 Source: https://help.semmle.com/wiki/display/PYTHON/NotImplemented+is+not+an+Exception
 
+
+### ``print``
+
+> Use the `.format` method if possible for strings.
+
+```python
+"Hi {}".format("Example")
+```
+
+> Use the `logging` instead of print.
+
+```python
+import logging
+
+LOGGING_FORMAT = '%(asctime)s %(name)-12s %(levelname)-8s %(message)s'
+
+logging.basicConfig(format=LOGGING_FORMAT)
+
+logger = logging.getLogger(__name__)
+
+logger.setLevel(logging.DEBUG)
+
+logger.info("Hi {}".format("Example"))
+
+logger.debug("Hi {}".format("Example"))
+```
+
