@@ -55,7 +55,7 @@ https://github.com/neo4j/neo4j.github.com/tree/master/code-style
 
 # Python Style Guide
 
-## `import`
+### `import`
 
 > Dont use the star import, `import *`
 
@@ -80,7 +80,7 @@ os.path
 os.path.join()
 ```
 
-## ``raise NotImplementedError()``
+### ``raise NotImplementedError()``
 
 ```python
 class Abstract(object):
