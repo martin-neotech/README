@@ -23,11 +23,11 @@ docker image ls -a
 https://neo4j.com/developer/docker-run-neo4j/
 
 ```
-docker run --name testlatest -p7687:7687 -p7474:7474 -p7473:7473 --env NEO4J_AUTH=neo4j/word neo4j:latest
+docker run --name testlatest -p7687:7687 -p7474:7474 -p7473:7473 --env NEO4J_AUTH=neo4j/password neo4j:latest
 ```
 
 ```
-docker run --name testenterprise -p7687:7687 -p7474:7474 -p7473:7473 --env NEO4J_AUTH=neo4j/word --env NEO4J_ACCEPT_LICENSE_AGREEMENT=yes neo4j:enterprise
+docker run --name testenterprise -p7687:7687 -p7474:7474 -p7473:7473 --env NEO4J_AUTH=neo4j/password --env NEO4J_ACCEPT_LICENSE_AGREEMENT=yes neo4j:enterprise
 ```
 
 ```
@@ -104,4 +104,20 @@ docker run --name=read_replica1 --detach --network=cluster \
          --env=NEO4J_causal__clustering_initial__discovery__members=core1:5000,core2:5000,core3:5000 \
          --env=NEO4J_ACCEPT_LICENSE_AGREEMENT=yes \
          neo4j:3.5-enterprise
- ```
+```
+
+
+# UBUNTU with Python
+
+https://hub.docker.com/_/ubuntu
+
+https://hub.docker.com/_/python
+
+```
+docker pull ubuntu:18.04
+```
+
+
+
+
+
