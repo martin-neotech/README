@@ -290,3 +290,14 @@ docker run -it -d --network=teamcity --name=conductor --dns=8.8.8.8 --ip=172.22.
 ```
 --volume /var/run/docker.sock:/var/run/docker.sock
 ```
+
+
+# Dockerfile with Java
+
+`JAVA_HOME` being inherited in many builds.
+
+`JAVA_HOME` makes zero sense in Docker images.
+
+> **Think about it:** you pick up a Docker image like openjdk:11, it literally has one purpose in life which is to provide Java 11 for you to run - and does so by conveniently sticking the Java bin directory on path.
+
+`JAVA_HOME` as you know is a convention for selecting between multiple JAVA installations on a traditional computer, thus misplaced for this setup.
