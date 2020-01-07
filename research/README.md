@@ -291,6 +291,17 @@ Using ISO-8601
 
 Local
 
+## Temporal Native Types
+
+The native temporal types for each language work with different degrees of precision:
+
+| library | precission |
+| ------- | ---------- |
+| Java | 9 decimal places (nanoseconds) |
+| JavaScript | 3 decimal places (milliseconds) |
+| Python | 6 decimal places (microseconds) |
+| .NET | 7 decmial places (microsoftseconds?) |
+
 
 ## Temporal Types Python Libraries 
 
