@@ -354,4 +354,18 @@ https://about.gitlab.com/blog/2018/06/07/keeping-git-commit-history-clean/
 https://github.com/mockito/mockito/wiki/Using-git-to-prepare-your-PR-to-have-a-clean-history
 
 
+# Github API
+
+https://help.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests
+
+```
+https://api.github.com/repos/neo4j/neo4j-python-driver
+```
+
+```
+https://api.github.com/repos/neo4j/neo4j-python-driver/pulls?base=4.0
+```
+
+
+
 
