@@ -301,3 +301,57 @@ docker run -it -d --network=teamcity --name=conductor --dns=8.8.8.8 --ip=172.22.
 > **Think about it:** you pick up a Docker image like openjdk:11, it literally has one purpose in life which is to provide Java 11 for you to run - and does so by conveniently sticking the Java bin directory on path.
 
 `JAVA_HOME` as you know is a convention for selecting between multiple JAVA installations on a traditional computer, thus misplaced for this setup.
+
+
+# Debuging on Python Driver Test Image
+
+Check available images
+
+```
+docker images
+```
+
+
+Fetch python image from AWS ECR
+
+```
+todo ...
+```
+
+
+First check available containers
+
+```
+docker ps -a
+```
+
+
+*Create a new python-debug container*
+
+```
+docker run -it --name=python-debug drivers:python-0.0.4
+```
+
+https://docs.docker.com/engine/reference/run/
+
+
+*Start python-debug container*
+
+```
+docker start ...
+```
+
+*Copy file from host machine to docker container*
+
+
+```
+docker cp -r ~/WSPACE/neo4j-python-driver python-debug:/neo4j-python-driver
+```
+
+
+*Attach to container*
+
+```
+docker attach --detach-keys 'ctrl-k' python-debug
+```
+
