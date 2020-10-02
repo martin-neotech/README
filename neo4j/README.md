@@ -66,11 +66,28 @@ https://github.com/neo4j/neo4j/wiki/Neo4j-3.5-changelog
 + https://neo4j.com/release-notes/neo4j-3-5-0/  2018-11-29
 
 
-
 ## 3.4
 
 https://github.com/neo4j/neo4j/wiki/Neo4j-3.4-changelog
 
++ https://neo4j.com/release-notes/neo4j-3-4-18/
++ https://neo4j.com/release-notes/neo4j-3-4-17/
++ https://neo4j.com/release-notes/neo4j-3-4-16/
++ https://neo4j.com/release-notes/neo4j-3-4-15/
++ https://neo4j.com/release-notes/neo4j-3-4-14/
++ https://neo4j.com/release-notes/neo4j-3-4-13/
++ https://neo4j.com/release-notes/neo4j-3-4-12/
++ https://neo4j.com/release-notes/neo4j-3-4-11/
++ https://neo4j.com/release-notes/neo4j-3-4-10/
++ https://neo4j.com/release-notes/neo4j-3-4-9/
++ https://neo4j.com/release-notes/neo4j-3-4-8/
++ https://neo4j.com/release-notes/neo4j-3-4-7/
++ https://neo4j.com/release-notes/neo4j-3-4-6/
++ https://neo4j.com/release-notes/neo4j-3-4-5/
++ https://neo4j.com/release-notes/neo4j-3-4-4/
++ https://neo4j.com/release-notes/neo4j-3-4-3/
++ https://neo4j.com/release-notes/neo4j-3-4-2/
++ https://neo4j.com/release-notes/neo4j-3-4-1/
 + https://neo4j.com/release-notes/neo4j-3-4-0/  2018-05-17
 
 
@@ -78,6 +95,15 @@ https://github.com/neo4j/neo4j/wiki/Neo4j-3.4-changelog
 
 https://github.com/neo4j/neo4j/wiki/Neo4j-3.3-changelog
 
++ https://neo4j.com/release-notes/neo4j-3-3-9/
++ https://neo4j.com/release-notes/neo4j-3-3-8/
++ https://neo4j.com/release-notes/neo4j-3-3-7/
++ https://neo4j.com/release-notes/neo4j-3-3-6/
++ https://neo4j.com/release-notes/neo4j-3-3-5/
++ https://neo4j.com/release-notes/neo4j-3-3-4/
++ https://neo4j.com/release-notes/neo4j-3-3-3/
++ https://neo4j.com/release-notes/neo4j-3-3-2/
++ https://neo4j.com/release-notes/neo4j-3-3-1/
 + https://neo4j.com/release-notes/neo4j-3-3-0/   2017-10-24
 
 
@@ -85,19 +111,54 @@ https://github.com/neo4j/neo4j/wiki/Neo4j-3.3-changelog
 
 https://github.com/neo4j/neo4j/wiki/Neo4j-3.2-changelog
 
-+ https://neo4j.com/release-notes/neo4j-3-2-0/
++ https://neo4j.com/release-notes/neo4j-3-2-14/
++ https://neo4j.com/release-notes/neo4j-3-2-13/
++ https://neo4j.com/release-notes/neo4j-3-2-12/
++ https://neo4j.com/release-notes/neo4j-3-2-11/
++ https://neo4j.com/release-notes/neo4j-3-2-10/
++ https://neo4j.com/release-notes/neo4j-3-2-9/
++ https://neo4j.com/release-notes/neo4j-3-2-8/
++ https://neo4j.com/release-notes/neo4j-3-2-7/
++ https://neo4j.com/release-notes/neo4j-3-2-6/
++ https://neo4j.com/release-notes/neo4j-3-2-5/
++ https://neo4j.com/release-notes/neo4j-3-2-4/
++ https://neo4j.com/release-notes/neo4j-3-2-3/
++ https://neo4j.com/release-notes/neo4j-3-2-2/
++ https://neo4j.com/release-notes/neo4j-3-2-1/
++ https://neo4j.com/release-notes/neo4j-3-2-0/  2017-05-11
 
 
 ## 3.1
 
 https://github.com/neo4j/neo4j/wiki/Neo4j-3.1-changelog
 
-+ https://neo4j.com/release-notes/neo4j-3-1-0/
++ https://neo4j.com/release-notes/neo4j-3-1-9/
++ https://neo4j.com/release-notes/neo4j-3-1-8/
++ https://neo4j.com/release-notes/neo4j-3-1-7/
++ https://neo4j.com/release-notes/neo4j-3-1-6/
++ https://neo4j.com/release-notes/neo4j-3-1-5/
++ https://neo4j.com/release-notes/neo4j-3-1-4/
++ https://neo4j.com/release-notes/neo4j-3-1-3/
++ https://neo4j.com/release-notes/neo4j-3-1-2/
++ https://neo4j.com/release-notes/neo4j-3-1-1/
++ https://neo4j.com/release-notes/neo4j-3-1-0/  2016-12-13
 
 
 ## 3.0
 
 https://github.com/neo4j/neo4j/wiki/Neo4j-3.0-changelog
 
-+ https://neo4j.com/release-notes/neo4j-3-0-0/
++ https://neo4j.com/release-notes/neo4j-3-0-12/
++ https://neo4j.com/release-notes/neo4j-3-0-11/
++ https://neo4j.com/release-notes/neo4j-3-0-10/
++ https://neo4j.com/release-notes/neo4j-3-0-9/
++ https://neo4j.com/release-notes/neo4j-3-0-8/
++ https://neo4j.com/release-notes/neo4j-3-0-7/
++ https://neo4j.com/release-notes/neo4j-3-0-6/
++ https://neo4j.com/release-notes/neo4j-3-0-5/
++ https://neo4j.com/release-notes/neo4j-3-0-4/
++ https://neo4j.com/release-notes/neo4j-3-0-3/  2016-06-14
++ https://neo4j.com/release-notes/neo4j-3-0-2/  2016-06-02
++ https://neo4j.com/release-notes/neo4j-3-0-1/  2016-05-06
++ https://neo4j.com/release-notes/neo4j-3-0-0/  2016-04-26
 
