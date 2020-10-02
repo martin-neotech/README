@@ -148,15 +148,15 @@ https://github.com/neo4j/neo4j/wiki/Neo4j-3.1-changelog
 
 https://github.com/neo4j/neo4j/wiki/Neo4j-3.0-changelog
 
-+ https://neo4j.com/release-notes/neo4j-3-0-12/
-+ https://neo4j.com/release-notes/neo4j-3-0-11/
-+ https://neo4j.com/release-notes/neo4j-3-0-10/
-+ https://neo4j.com/release-notes/neo4j-3-0-9/
-+ https://neo4j.com/release-notes/neo4j-3-0-8/
-+ https://neo4j.com/release-notes/neo4j-3-0-7/
-+ https://neo4j.com/release-notes/neo4j-3-0-6/
-+ https://neo4j.com/release-notes/neo4j-3-0-5/
-+ https://neo4j.com/release-notes/neo4j-3-0-4/
++ https://neo4j.com/release-notes/neo4j-3-0-12/ 2017-10-03
++ https://neo4j.com/release-notes/neo4j-3-0-11/ 2017-08-02
++ https://neo4j.com/release-notes/neo4j-3-0-10/ 2017-06-28
++ https://neo4j.com/release-notes/neo4j-3-0-9/  2017-03-15
++ https://neo4j.com/release-notes/neo4j-3-0-8/  2016-12-14
++ https://neo4j.com/release-notes/neo4j-3-0-7/  2016-11-02
++ https://neo4j.com/release-notes/neo4j-3-0-6/  2016-09-16
++ https://neo4j.com/release-notes/neo4j-3-0-5/  2016-09-09
++ https://neo4j.com/release-notes/neo4j-3-0-4/  2016-07-29
 + https://neo4j.com/release-notes/neo4j-3-0-3/  2016-06-14
 + https://neo4j.com/release-notes/neo4j-3-0-2/  2016-06-02
 + https://neo4j.com/release-notes/neo4j-3-0-1/  2016-05-06
