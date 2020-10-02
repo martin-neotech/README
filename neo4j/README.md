@@ -70,24 +70,24 @@ https://github.com/neo4j/neo4j/wiki/Neo4j-3.5-changelog
 
 https://github.com/neo4j/neo4j/wiki/Neo4j-3.4-changelog
 
-+ https://neo4j.com/release-notes/neo4j-3-4-18/
-+ https://neo4j.com/release-notes/neo4j-3-4-17/
-+ https://neo4j.com/release-notes/neo4j-3-4-16/
-+ https://neo4j.com/release-notes/neo4j-3-4-15/
-+ https://neo4j.com/release-notes/neo4j-3-4-14/
-+ https://neo4j.com/release-notes/neo4j-3-4-13/
-+ https://neo4j.com/release-notes/neo4j-3-4-12/
-+ https://neo4j.com/release-notes/neo4j-3-4-11/
-+ https://neo4j.com/release-notes/neo4j-3-4-10/
-+ https://neo4j.com/release-notes/neo4j-3-4-9/
-+ https://neo4j.com/release-notes/neo4j-3-4-8/
-+ https://neo4j.com/release-notes/neo4j-3-4-7/
-+ https://neo4j.com/release-notes/neo4j-3-4-6/
-+ https://neo4j.com/release-notes/neo4j-3-4-5/
-+ https://neo4j.com/release-notes/neo4j-3-4-4/
-+ https://neo4j.com/release-notes/neo4j-3-4-3/
-+ https://neo4j.com/release-notes/neo4j-3-4-2/
-+ https://neo4j.com/release-notes/neo4j-3-4-1/
++ https://neo4j.com/release-notes/neo4j-3-4-18/ 2020-04-29
++ https://neo4j.com/release-notes/neo4j-3-4-17/ 2019-11-19
++ https://neo4j.com/release-notes/neo4j-3-4-16/ 2019-10-11
++ https://neo4j.com/release-notes/neo4j-3-4-15/ 2019-08-14
++ https://neo4j.com/release-notes/neo4j-3-4-14/ 2019-05-22
++ https://neo4j.com/release-notes/neo4j-3-4-13/ 2019-04-18
++ https://neo4j.com/release-notes/neo4j-3-4-12/ 2019-01-18
++ https://neo4j.com/release-notes/neo4j-3-4-11/ 2018-12-17
++ https://neo4j.com/release-notes/neo4j-3-4-10/ 2018-11-14
++ https://neo4j.com/release-notes/neo4j-3-4-9/  2018-10-14
++ https://neo4j.com/release-notes/neo4j-3-4-8/  2018-10-04
++ https://neo4j.com/release-notes/neo4j-3-4-7/  2018-08-31
++ https://neo4j.com/release-notes/neo4j-3-4-6/  2018-08-16
++ https://neo4j.com/release-notes/neo4j-3-4-5/  2018-07-26
++ https://neo4j.com/release-notes/neo4j-3-4-4/  2018-07-11
++ https://neo4j.com/release-notes/neo4j-3-4-3/  2018-07-05 DO NOT USE!
++ https://neo4j.com/release-notes/neo4j-3-4-2/  2018-07-04
++ https://neo4j.com/release-notes/neo4j-3-4-1/  2018-06-12
 + https://neo4j.com/release-notes/neo4j-3-4-0/  2018-05-17
 
 
