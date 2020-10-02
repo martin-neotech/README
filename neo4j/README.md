@@ -13,7 +13,8 @@ https://github.com/neo4j/neo4j/wiki/Neo4j-4.2-changelog
 
 https://github.com/neo4j/neo4j/wiki/Neo4j-4.1-changelog
 
-+ https://neo4j.com/release-notes/neo4j-4-1-3/
++ https://neo4j.com/release-notes/neo4j-4-1-4/
++ https://neo4j.com/release-notes/neo4j-4-1-3/ 2020-10-01
 + https://neo4j.com/release-notes/neo4j-4-1-2/ 2020-09-22
 + https://neo4j.com/release-notes/neo4j-4-1-1/ 2020-06-14
 + https://neo4j.com/release-notes/neo4j-4-1-0/ 2020-05-23
@@ -39,4 +40,27 @@ https://github.com/neo4j/neo4j/wiki/Neo4j-4.0-changelog
 
 https://github.com/neo4j/neo4j/wiki/Neo4j-3.5-changelog
 
++ https://neo4j.com/release-notes/neo4j-3-5-23/
 + https://neo4j.com/release-notes/neo4j-3-5-22/ 2020-09-15
++ https://neo4j.com/release-notes/neo4j-3-5-21/
++ https://neo4j.com/release-notes/neo4j-3-5-20/
++ https://neo4j.com/release-notes/neo4j-3-5-19/
++ https://neo4j.com/release-notes/neo4j-3-5-18/
++ https://neo4j.com/release-notes/neo4j-3-5-17/
++ https://neo4j.com/release-notes/neo4j-3-5-16/
++ https://neo4j.com/release-notes/neo4j-3-5-15/
++ https://neo4j.com/release-notes/neo4j-3-5-14/
++ https://neo4j.com/release-notes/neo4j-3-5-13/
++ https://neo4j.com/release-notes/neo4j-3-5-12/
++ https://neo4j.com/release-notes/neo4j-3-5-11/
++ https://neo4j.com/release-notes/neo4j-3-5-10/
++ https://neo4j.com/release-notes/neo4j-3-5-9/
++ https://neo4j.com/release-notes/neo4j-3-5-8/
++ https://neo4j.com/release-notes/neo4j-3-5-7/
++ https://neo4j.com/release-notes/neo4j-3-5-6/
++ https://neo4j.com/release-notes/neo4j-3-5-5/
++ https://neo4j.com/release-notes/neo4j-3-5-4/
++ https://neo4j.com/release-notes/neo4j-3-5-3/
++ https://neo4j.com/release-notes/neo4j-3-5-2/
++ https://neo4j.com/release-notes/neo4j-3-5-1/
+
