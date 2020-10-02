@@ -95,15 +95,15 @@ https://github.com/neo4j/neo4j/wiki/Neo4j-3.4-changelog
 
 https://github.com/neo4j/neo4j/wiki/Neo4j-3.3-changelog
 
-+ https://neo4j.com/release-notes/neo4j-3-3-9/
-+ https://neo4j.com/release-notes/neo4j-3-3-8/
-+ https://neo4j.com/release-notes/neo4j-3-3-7/
-+ https://neo4j.com/release-notes/neo4j-3-3-6/
-+ https://neo4j.com/release-notes/neo4j-3-3-5/
-+ https://neo4j.com/release-notes/neo4j-3-3-4/
-+ https://neo4j.com/release-notes/neo4j-3-3-3/
-+ https://neo4j.com/release-notes/neo4j-3-3-2/
-+ https://neo4j.com/release-notes/neo4j-3-3-1/
++ https://neo4j.com/release-notes/neo4j-3-3-9/   2018-11-02
++ https://neo4j.com/release-notes/neo4j-3-3-8/   2018-10-30
++ https://neo4j.com/release-notes/neo4j-3-3-7/   2018-09-12
++ https://neo4j.com/release-notes/neo4j-3-3-6/   2018-06-14
++ https://neo4j.com/release-notes/neo4j-3-3-5/   2018-04-11
++ https://neo4j.com/release-notes/neo4j-3-3-4/   2018-03-15
++ https://neo4j.com/release-notes/neo4j-3-3-3/   2018-02-12
++ https://neo4j.com/release-notes/neo4j-3-3-2/   2018-01-22
++ https://neo4j.com/release-notes/neo4j-3-3-1/   2017-11-39
 + https://neo4j.com/release-notes/neo4j-3-3-0/   2017-10-24
 
 
